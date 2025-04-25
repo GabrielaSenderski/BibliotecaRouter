@@ -1,35 +1,9 @@
-# .
+# Projeto-Loja
 
-This template should help get you started developing with Vue 3 in Vite.
+- Repositório feito para a livraria online da aula de desenvolvimento web II
+- Ultiliza o Vue Router para navegação
 
-## Recommended IDE Setup
+## Desenvolvedores:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Gabriela Senderski - https://github.com/GabrielaSenderski
+- Henrique Santiago de Souza Borba - https://github.com/Henri0042007
