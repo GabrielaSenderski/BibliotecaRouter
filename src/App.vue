@@ -7,10 +7,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <header>
         <nav>
+          <link rel="stylesheet" href="../src/assets/main.css">
           <routerLink to="/"><img src="/public/Logo.png" alt="Logo IFBooks"></routerLink>
         <div class="search">
-            <input type="text" placeholder="Pesquisar">
-            <img src="/public/lupa.svg" alt="lupa">
+            <input type="text" placeholder="Pesquisar  ">
+            <img src="/public/lupa.svg" width="15" height="13" alt="lupa">
         </div>
         <ul>
             <li><a href="#">Termos</a></li>
