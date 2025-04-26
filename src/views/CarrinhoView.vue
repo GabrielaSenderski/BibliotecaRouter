@@ -1,6 +1,6 @@
 <template>
   <body>
-    
+
   <main>
 <section class="carrinho">
     <h2>Carrinho</h2>
@@ -11,11 +11,11 @@
         <li>Subtotal</li>
       </ul>
       <hr>
-  
-  
+
+
       <hr>
-  
-  
+
+
     </div>
   </section>
   <section>
@@ -40,6 +40,6 @@
   </body>
 </template>
 
-<style>
+<style scoped>
 
 </style>
