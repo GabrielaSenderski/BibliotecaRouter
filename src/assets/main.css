@@ -14,13 +14,18 @@ menu, ol, ul {
 }
 
 
+.search img{
+  height: 14px;
+  width: 15px;
+  margin: 0 0 0 -3vw;
+}
 nav img{
-  margin: 1vw 0 0 0 ;
+  margin: 0.5vw 0 0 0 ;
 }
 nav {
   display: flex;
   justify-content: space-around;
-  margin: 1vw;
+  margin: 0.5vw;
 }
 nav ul{
   display:flex ;

@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <routerLink to="/"><img src="/public/Logo.png" alt="Logo IFBooks"></routerLink>
         <div class="search">
             <input type="text" placeholder="Pesquisar  ">
-            <img src="/public/lupa.svg" width="15" height="13" alt="lupa">
+            <img src="/public/lupa.svg" alt="lupa">
         </div>
         <ul>
             <li><a href="#">Termos</a></li>
