@@ -7,11 +7,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <header>
         <nav>
-          <link rel="stylesheet" href="../src/assets/main.css">
-          <routerLink to="/"><img src="/public/Logo.png" alt="Logo IFBooks"></routerLink>
+
+          <routerLink to="/"><img src="/public/img/Logo.png" alt="Logo IFBooks"></routerLink>
         <div class="search">
-            <input type="text" placeholder="Pesquisar  ">
-            <img src="/public/lupa.svg" alt="lupa">
+            <input type="text" placeholder="Pesquisar">
+            <img src="/public/img/lupa.svg" alt="lupa">
         </div>
         <ul>
             <li><a href="#">Termos</a></li>
@@ -28,8 +28,23 @@ import { RouterLink, RouterView } from 'vue-router'
         </nav>
         <hr>
     </header>
-
+    
     <RouterView />
+    <footer>
+  <div>
+  IFBooks
+</div>
+<div>
+  Contato
+  <ul>
+    <li>+55 47 40045263</li>
+    <li>8h às 23h - Seg a Sex</li>
+    <li>Contato@ifbooks.com</li>
+  </ul>
+</div>
+<hr>
+<p>&copy; Alguns direitos reservados. IFbooks 2025.</p>
+</footer>
 </template>
 
 <style scoped>
