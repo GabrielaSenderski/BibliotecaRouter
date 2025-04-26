@@ -7,6 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <header>
         <nav>
+
           <routerLink to="/"><img src="/public/img/Logo.png" alt="Logo IFBooks"></routerLink>
         <div class="search">
             <input type="text" placeholder="Pesquisar">
