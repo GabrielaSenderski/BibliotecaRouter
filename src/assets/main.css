@@ -2,4 +2,42 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+menu, ol, ul {
+  list-style: none
+}
+
+
+.search img{
+  height: 14px;
+  width: 15px;
+  margin: 0 0 0 -3vw;
+}
+nav img{
+  margin: 0.5vw 0 0 0 ;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5vw;
+}
+nav ul{
+  display:flex ;
+}
+nav ul li{
+  margin: 1vw 1.5vw 0 1.5vw;
+}
+nav div input{
+  width: 24vw;
+  height: 2.5vw;
+  margin: 0.5vw;
+}
+hr{
+  border: 1px solid #27AE60
 }
