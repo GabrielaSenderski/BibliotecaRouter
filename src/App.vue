@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
           <routerLink to="/"><img src="/public/img/Logo.png" alt="Logo IFBooks"></routerLink>
         <div class="search">
-            <input type="text" placeholder="Pesquisar">
+            <input type="text" placeholder="   Pesquisar">
             <img src="/public/img/lupa.svg" alt="lupa">
         </div>
         <ul>
@@ -19,16 +19,16 @@ import { RouterLink, RouterView } from 'vue-router'
             <li><a href="#">Envio</a></li>
             <li><a href="#">Devoluções</a></li>
             <li><RouterLink to="/carrinho" class="botao-carrinho">
-  <span class="fa-solid fa-cart-shopping" style="color: #33d17a;"></span>
-</RouterLink>
-</li>
+            <span class="fa-solid fa-cart-shopping" style="color: #33d17a;"></span></RouterLink></li>
+            <div class="linha-vertical"></div>
             <li><button><span class="fa-solid fa-heart" style="color: #33d17a;"></span></button></li>
+            <div class="linha-vertical"></div>
             <li><button><span class="fa-solid fa-user" style="color: #33d17a;"></span></button></li>
         </ul>
         </nav>
         <hr>
     </header>
-    
+
     <RouterView />
     <footer>
   <div>

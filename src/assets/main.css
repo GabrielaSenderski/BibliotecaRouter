@@ -49,3 +49,17 @@ nav button{
   background-color: white;
   border: none;
 }
+nav input{
+  background-color: #F1F1F1;
+  border-radius: 3px;
+  color:  #7B7881;
+}
+.linha-vertical {
+  height: 20px;
+  width: 1.2px;
+  background-color: #27AE60;
+  margin: 13px 0 ;
+}
+nav a{
+  color: #7B7881;
+}
