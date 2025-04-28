@@ -125,12 +125,12 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
 }
 .banner p{
   font-size: 1.2rem;
-  padding: 0 10vw 0 3vw;
+  padding: 0 26vw 0 3vw;
  margin: 0 0 1.5vw;
 }
 .banner button{
-  font-size: 0.8rem;
-  padding: 0.8rem 0.8rem;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
   border: 2px solid #27AE60;
   border-radius: 4px;
   display: inline-block;
@@ -147,7 +147,7 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
   margin: 6vw 0 4vw 6vw;
 }
 .direito{
-  margin: 0 6vw;
+  margin: 0 6vw 0 0;
 }
 .fileira ul{
   display: flex;
@@ -173,11 +173,17 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
   height: 100px;
   width: 1.2px;
   background-color: #937DC2;
-  margin: 40px 0 ;
+  margin: 45px 0 ;
 }
 .lançamentos h2{
   font-size: 2.3rem;
   margin: 5vw 0 0 7vw;
+}
+.superior {
+  display: flex;
+}
+.inferior{
+  display: flex;
 }
 
 

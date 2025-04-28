@@ -19,11 +19,11 @@ import { RouterLink, RouterView } from 'vue-router'
             <li><a href="#">Envio</a></li>
             <li><a href="#">Devoluções</a></li>
             <li><RouterLink to="/carrinho" class="botao-carrinho">
-            <span class="fa-solid fa-cart-shopping" style="color: #33d17a;"></span></RouterLink></li>
+            <span class="fa-solid fa-cart-shopping" style="color: #33d17a; font-size: 1vw;"></span></RouterLink></li>
             <div class="linha-vertical"></div>
-            <li><button><span class="fa-solid fa-heart" style="color: #33d17a;"></span></button></li>
+            <li><button><span class="fa-solid fa-heart" style="color: #33d17a; font-size: 1vw;"></span></button></li>
             <div class="linha-vertical"></div>
-            <li><button><span class="fa-solid fa-user" style="color: #33d17a;"></span></button></li>
+            <li><button><span class="fa-solid fa-user" style="color: #33d17a; font-size: 1vw;"></span></button></li>
         </ul>
         </nav>
         <hr>

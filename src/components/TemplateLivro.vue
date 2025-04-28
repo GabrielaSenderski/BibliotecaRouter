@@ -22,5 +22,6 @@ defineProps(['imagem', 'titulo', 'autor', 'preco'])
     <RouterLink to="/carrinho"><span class="fa-solid fa-cart-shopping" style="color: #ffff;"></span> Comprar</RouterLink>
   </div>
 </template>
-<style>
+<style scoped>
+
 </style>
