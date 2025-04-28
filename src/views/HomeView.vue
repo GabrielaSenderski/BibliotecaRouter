@@ -29,19 +29,23 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
         <ul>
           <li>
             <span class="fa-solid fa-truck-fast" style="color: #241f31"></span>
-            <p>Frete grátis para SC</p>
+            <h3>Frete grátis para SC</h3>
           </li>
+          <div class="linha-vertical"></div>
           <li>
             <span class="fa-solid fa-star" style="color: #241f31"></span>
-            <p>Livros recomendados</p>
+            <h3>Livros recomendados</h3>
           </li>
+          <div class="linha-vertical"></div>
           <li>
             <span class="fa-solid fa-book-open" style="color: #241f31"></span>
-            <p>Mais vendidos</p>
+            <h3>Mais vendidos</h3>
           </li>
         </ul>
       </section>
       <section class="lançamentos">
+      <hr>
+      <h2>Lançamentos</h2>
         <div class="divMae">
             <div class="superior">
         <TemplateLivro
@@ -144,6 +148,36 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
 }
 .direito{
   margin: 0 6vw;
+}
+.fileira ul{
+  display: flex;
+  text-align: center;
+}
+.fileira ul li{
+  display: flex;
+  margin: 5vw 6vw;
+}
+.fileira ul li h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.fileira ul li span{
+  font-size: 2rem;
+  color: #2a2d30;
+  margin: 0 1vw;
+}
+.fileira div{
+  color: red;
+}
+.linha-vertical {
+  height: 100px;
+  width: 1.2px;
+  background-color: #937DC2;
+  margin: 40px 0 ;
+}
+.lançamentos h2{
+  font-size: 2.3rem;
+  margin: 5vw 0 0 7vw;
 }
 
 
