@@ -31,22 +31,42 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <RouterView />
     <footer>
-  <div>
-  IFBooks
-</div>
-<div>
-  Contato
+      <div class="todas">
+        <div class="icone">
+    <p>IFBooks</p>
+        </div>
+<div class="contato">
+  <p>Contato</p>
   <ul>
     <li>+55 47 40045263</li>
     <li>8h às 23h - Seg a Sex</li>
     <li>Contato@ifbooks.com</li>
   </ul>
 </div>
-<hr>
+      </div>
+     <hr style="border: 1px solid white;">
 <p>&copy; Alguns direitos reservados. IFbooks 2025.</p>
 </footer>
 </template>
 
 <style scoped>
-
+footer{
+  background-color: #27AE60;
+}
+footer p{
+  color: white;
+}
+footer li{
+  color: white;
+  margin: 1vw 0 ;
+}
+.todas {
+  display: flex;
+}
+.icone{
+  margin: 2vw 0 4vw 6vw;
+}
+.contato{
+  margin: 2vw 4vw 0 75vw;
+}
 </style>
