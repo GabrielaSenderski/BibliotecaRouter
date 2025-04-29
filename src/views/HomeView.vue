@@ -1,5 +1,8 @@
 <script setup>
-import TemplateLivro from '@/components/TemplateLivro.vue'
+
+import { useProductsStore } from '../store/produtos';
+
+const { products } = useProductsStore();
 </script>
 
 <template>
@@ -39,6 +42,35 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
             <p>Mais vendidos</p>
           </li>
         </ul>
+      </section>
+      <section class="usandoPinia">
+        <div class="product-list">
+    <div 
+      v-for="product in products" 
+      :key="product.id" 
+      class="exibicaoLivro"
+    >
+      <img 
+        :src="product.image" 
+        :alt="product.titulo" 
+        class="capaLivro"
+      />
+      <h2 class="tituloLivro">{{ product.titulo }}</h2>
+      <p class="autorLivro">Autor: {{ product.autor }}</p>
+      <p class="precoLivro">Preço: R$ {{ product.preco.toFixed(2) }}</p>
+      <div class="like">
+      <button @click="curtido = !curtido">
+        <span v-if="!curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
+        <span v-else class="fa-solid fa-heart" style="color: #33d17a"></span>
+      </button>
+    </div>
+    <RouterLink 
+    to="/carrinho" 
+    @click="addProduct(product)">
+    <span class="fa-solid fa-cart-shopping" style="color: #ffff;"></span> Comprar
+  </RouterLink>
+    </div>
+  </div>
       </section>
       <section class="lançamentos">
         <div class="divMae">
