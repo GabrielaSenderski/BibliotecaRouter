@@ -29,15 +29,39 @@ nav {
 }
 nav ul{
   display:flex ;
+  cursor: pointer;
 }
 nav ul li{
   margin: 1vw 1.5vw 0 1.5vw;
 }
 nav div input{
   width: 24vw;
-  height: 2.5vw;
+  height: 1.8vw;
   margin: 0.5vw;
 }
 hr{
   border: 1px solid #27AE60
+}
+nav a{
+  text-decoration: none;
+  color: #7B7881;
+}
+nav button{
+  background-color: white;
+  border: none;
+}
+nav input{
+  background-color: #F1F1F1;
+  border-radius: 3px;
+  color:  #7B7881;
+  border: none;
+}
+.linha-vertical {
+  height: 20px;
+  width: 1.2px;
+  background-color: #27AE60;
+  margin: 18px 0 ;
+}
+nav a{
+  color: #7B7881;
 }
