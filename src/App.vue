@@ -21,9 +21,9 @@ import { RouterLink, RouterView } from 'vue-router'
             <li><RouterLink to="/carrinho" class="botao-carrinho">
             <span class="fa-solid fa-cart-shopping" style="color: #33d17a; font-size: 1vw;"></span></RouterLink></li>
             <div class="linha-vertical"></div>
-            <li><button><span class="fa-solid fa-heart" style="color: #33d17a; font-size: 1vw;"></span></button></li>
+            <li><a href="#"><span class="fa-solid fa-heart" style="color: #33d17a; font-size: 1vw;"></span></a></li>
             <div class="linha-vertical"></div>
-            <li><button><span class="fa-solid fa-user" style="color: #33d17a; font-size: 1vw;"></span></button></li>
+            <li><a href="#"><span class="fa-solid fa-user" style="color: #33d17a; font-size: 1vw;"></span></a></li>
         </ul>
         </nav>
         <hr>
@@ -74,5 +74,6 @@ footer .copy{
   margin: 1.5vw;
   font-size: 1rem;
   color: rgba(255, 255, 255, 60%);
+  padding: 1vw;
 }
 </style>

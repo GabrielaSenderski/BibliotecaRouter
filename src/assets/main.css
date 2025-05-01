@@ -29,6 +29,7 @@ nav {
 }
 nav ul{
   display:flex ;
+  cursor: pointer;
 }
 nav ul li{
   margin: 1vw 1.5vw 0 1.5vw;
