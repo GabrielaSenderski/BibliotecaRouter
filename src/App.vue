@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <footer>
       <div class="todas">
         <div class="icone">
-    <p>IFBooks</p>
+    <p>IFbooks</p>
         </div>
 <div class="contato">
   <p>Contato</p>
@@ -45,7 +45,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </div>
       </div>
      <hr style="border: 1px solid white;">
-<p>&copy; Alguns direitos reservados. IFbooks 2025.</p>
+<p class="copy">&copy; Alguns direitos reservados. IFbooks 2025.</p>
 </footer>
 </template>
 
@@ -57,7 +57,7 @@ footer p{
   color: white;
 }
 footer li{
-  color: white;
+  color: rgba(255, 255, 255, 80%);
   margin: 1vw 0 ;
 }
 .todas {
@@ -67,6 +67,12 @@ footer li{
   margin: 2vw 0 4vw 6vw;
 }
 .contato{
-  margin: 2vw 4vw 0 75vw;
+  margin: 2vw 4vw 0 73vw;
+}
+footer .copy{
+  text-align: center;
+  margin: 1.5vw;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 60%);
 }
 </style>
