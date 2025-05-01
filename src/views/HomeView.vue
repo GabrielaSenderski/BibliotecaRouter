@@ -1,5 +1,5 @@
 <script setup>
-import TemplateLivro from '@/components/TemplateLivro.vue'
+
 </script>
 
 <template>
@@ -48,56 +48,10 @@ import TemplateLivro from '@/components/TemplateLivro.vue'
       <h2>Lançamentos</h2>
         <div class="divMae">
             <div class="superior">
-        <TemplateLivro
-          imagem="/img/anjos.svg"
-          titulo="Anjos e Demônios"
-          autor="Dan Brown"
-          preco="R$56.70"
-        />
-        <TemplateLivro
-          imagem="/img/verity.svg"
-          titulo="Verity"
-          autor="Colleen Hoover"
-          preco="R$42.01"
-        />
-        <TemplateLivro
-          imagem="/img/caraval.svg"
-          titulo="Caraval"
-          autor="Stephanie Garber"
-          preco="R$42.90"
-        />
-        <TemplateLivro
-          imagem="/img/battle.svg"
-          titulo="Battle Royale"
-          autor="Koushun Takami"
-          preco="R$54.10"
-        />
+
     </div>
     <div class="inferior">
-        <TemplateLivro
-          imagem="/img/principe.svg"
-          titulo="O Príncipe Cruel"
-          autor="Holly Black"
-          preco="R$41.29"
-        />
-        <TemplateLivro
-          imagem="/img/alice.svg"
-          titulo="Alice in Wonderland"
-          autor="Lewis Carroll"
-          preco="R$48.93"
-        />
-        <TemplateLivro
-          imagem="/img/selecao.svg"
-          titulo="A Seleção"
-          autor="Kiera Cass"
-          preco="R$40.26"
-        />
-        <TemplateLivro
-          imagem="/img/homemgiz.svg"
-          titulo="O Homem de Giz"
-          autor="c. J. Tudor"
-          preco="R$43.99"
-        />
+       
     </div>
     </div>
       </section>
