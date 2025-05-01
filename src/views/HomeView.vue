@@ -1,8 +1,16 @@
 <script setup>
+import { useProductsStore } from '../stores/produtos'
+import { useCarrinhoStore } from '../stores/carrinho'
 
-import { useProductsStore } from '../store/produtos';
+const { products } = useProductsStore()
+const carrinho = useCarrinhoStore()
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
-const { products } = useProductsStore();
+function adicionarAoCarrinho(produto) {
+  carrinho.adicionarItem(produto)
+  router.push('/carrinho')
+}
 </script>
 
 <template>
@@ -45,89 +53,24 @@ const { products } = useProductsStore();
       </section>
       <section class="usandoPinia">
         <div class="product-list">
-    <div 
-      v-for="product in products" 
-      :key="product.id" 
-      class="exibicaoLivro"
-    >
-      <img 
-        :src="product.image" 
-        :alt="product.titulo" 
-        class="capaLivro"
-      />
-      <h2 class="tituloLivro">{{ product.titulo }}</h2>
-      <p class="autorLivro">Autor: {{ product.autor }}</p>
-      <p class="precoLivro">Preço: R$ {{ product.preco.toFixed(2) }}</p>
-      <div class="like">
-      <button @click="curtido = !curtido">
-        <span v-if="!curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
-        <span v-else class="fa-solid fa-heart" style="color: #33d17a"></span>
-      </button>
-    </div>
-    <RouterLink 
-    to="/carrinho" 
-    @click="addProduct(product)">
-    <span class="fa-solid fa-cart-shopping" style="color: #ffff;"></span> Comprar
-  </RouterLink>
-    </div>
-  </div>
+          <div v-for="product in products" :key="product.id" class="exibicaoLivro">
+            <img :src="product.image" :alt="product.titulo" class="capaLivro" />
+            <h2 class="tituloLivro">{{ product.titulo }}</h2>
+            <p class="autorLivro">Autor: {{ product.autor }}</p>
+            <p class="precoLivro">Preço: R$ {{ product.preco.toFixed(2) }}</p>
+            <div class="like">
+              <button @click="curtido = !curtido">
+                <span v-if="!curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
+                <span v-else class="fa-solid fa-heart" style="color: #33d17a"></span>
+              </button>
+            </div>
+            <button @click="adicionarAoCarrinho(product)">
+              <span class="fa-solid fa-cart-shopping" style="color: #fff"></span> Comprar
+            </button>
+          </div>
+        </div>
       </section>
-      <section class="lançamentos">
-        <div class="divMae">
-            <div class="superior">
-        <TemplateLivro
-          imagem="/img/anjos.svg"
-          titulo="Anjos e Demônios"
-          autor="Dan Brown"
-          preco="R$56.70"
-        />
-        <TemplateLivro
-          imagem="/img/verity.svg"
-          titulo="Verity"
-          autor="Colleen Hoover"
-          preco="R$42.01"
-        />
-        <TemplateLivro
-          imagem="/img/caraval.svg"
-          titulo="Caraval"
-          autor="Stephanie Garber"
-          preco="R$42.90"
-        />
-        <TemplateLivro
-          imagem="/img/battle.svg"
-          titulo="Battle Royale"
-          autor="Koushun Takami"
-          preco="R$54.10"
-        />
-    </div>
-    <div class="inferior">
-        <TemplateLivro
-          imagem="/img/principe.svg"
-          titulo="O Príncipe Cruel"
-          autor="Holly Black"
-          preco="R$41.29"
-        />
-        <TemplateLivro
-          imagem="/img/alice.svg"
-          titulo="Alice in Wonderland"
-          autor="Lewis Carroll"
-          preco="R$48.93"
-        />
-        <TemplateLivro
-          imagem="/img/selecao.svg"
-          titulo="A Seleção"
-          autor="Kiera Cass"
-          preco="R$40.26"
-        />
-        <TemplateLivro
-          imagem="/img/homemgiz.svg"
-          titulo="O Homem de Giz"
-          autor="c. J. Tudor"
-          preco="R$43.99"
-        />
-    </div>
-    </div>
-      </section>
+     
     </main>
   </body>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-  import ProdutosView from './ProdutosView.vue';
+  import ProductList from '../components/ProductList.vue';
   import { useProductsStore } from '../stores/produtos';
   const productStore = useProductsStore();
 </script>
@@ -7,5 +7,6 @@
   <product-list
     :produtos="productStore.products"
     @remove="productStore.removeProduct"
+    @add="productStore.addProduct"
   />
 </template>
