@@ -1,19 +1,23 @@
-
 import { defineStore } from 'pinia';
 
 export const useCarrinhoStore = defineStore('carrinho', {
   state: () => ({
-    itens: [], 
+    itens: []
   }),
   actions: {
     adicionarItem(produto) {
-      this.itens.push(produto);
+      const existente = this.itens.find(item => item.id === produto.id);
+      if (existente) {
+        existente.quantidade++;
+      } else {
+        this.itens.push({ ...produto, quantidade: 1 });
+      }
     },
-    removerItem(index) {
-      this.itens.splice(index, 1);
+    removerItem(id) {
+      this.itens = this.itens.filter(item => item.id !== id);
     },
     limparCarrinho() {
       this.itens = [];
-    },
-  },
+    }
+  }
 });
