@@ -71,12 +71,11 @@ function aplicarCupom() {
               <p>{{ item.autor }}</p>
               <span><p>R$ {{ item.preco.toFixed(2) }}</p></span>
             </div>
-            <div>
-              <button @click="removerLivro(item.id)">-</button>
-              <span>{{ quantidades[item.id] }}</span>
-              <button @click="adicionarLivro(item.id)">+</button>
-            </div>
-            <div>
+            <div class="controle">
+               <button class="menos" @click="removerLivro(item.id)">-</button>
+               <span>{{ quantidades[item.id] }}</span>
+               <button class="mais" @click="adicionarLivro(item.id)">+</button></div>
+            <div class="valor">
               <p>R$ {{ (quantidades[item.id] * item.preco).toFixed(2) }}</p>
             </div>
           </div>
@@ -174,7 +173,7 @@ input{
   border: 2px solid gray;
   border-radius: 4px;
   background-color: white;
-  margin: 0 0 16vw 19vw;
+  margin: 0 0 10vw 19vw;
   gap: 1.2rem;
 }
 
@@ -251,6 +250,27 @@ input{
 .info span p{
   font-size: 1.3rem;
   font-weight: bold;
+}
+.controle {
+  margin: 5vw 2vw 7vw 14vw;
+  padding: 1.2vw 1.5vw;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.controle span{
+  margin: 1.5vw;
+}
+.controle button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+}
+.valor{
+  font-size: 1.6vw;
+  font-weight: bold;
+  margin: 6vw 2vw 0 17.5vw;
 }
 
 

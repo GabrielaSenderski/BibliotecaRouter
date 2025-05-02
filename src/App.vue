@@ -52,6 +52,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 footer{
   background-color: #27AE60;
+  margin: 8vw 0 0 0;
 }
 footer p{
   color: white;
