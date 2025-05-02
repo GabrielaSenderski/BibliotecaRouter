@@ -49,27 +49,27 @@ function aplicarCupom() {
       <section class="carrinho">
         <h2>Carrinho</h2>
 
-        <div v-if="carrinho.itens.length === 0">
+        <div class="vazio" v-if="carrinho.itens.length === 0">
           <p>O carrinho está vazio.</p>
-          <router-link to="/">Voltar para a loja</router-link>
+          <router-link class="loja" to="/">Voltar para a loja</router-link>
         </div>
 
         <div v-else>
           <ul>
-            <li>Título</li>
+           <span><li>Título</li></span>
             <li>Quantidade</li>
             <li>Subtotal</li>
           </ul>
           <hr class="linha-escura">
 
-          <div v-for="item in carrinho.itens" :key="item.id">
+          <div class="item" v-for="item in carrinho.itens" :key="item.id">
             <div>
               <img v-if="item.image" :src="item.image" :alt="item.titulo" />
             </div>
-            <div>
+            <div class="info">
               <h3>{{ item.titulo }}</h3>
-              <p>Autor: {{ item.autor }}</p>
-              <p>Preço: R$ {{ item.preco.toFixed(2) }}</p>
+              <p>{{ item.autor }}</p>
+              <span><p>R$ {{ item.preco.toFixed(2) }}</p></span>
             </div>
             <div>
               <button @click="removerLivro(item.id)">-</button>
@@ -79,25 +79,23 @@ function aplicarCupom() {
             <div>
               <p>R$ {{ (quantidades[item.id] * item.preco).toFixed(2) }}</p>
             </div>
-           <hr class="linha-escura">
           </div>
+          <hr class="linha-escura">
         </div>
       </section>
 
       <section v-if="carrinho.itens.length > 0">
-        <router-link to="/">Voltar para a loja</router-link>
+        <router-link class="loja" to="/">Voltar para a loja</router-link>
         <div class="mae">
         <div class="esquerdo">
           <input v-model="cupom" type="text" placeholder="Código de cupom" />
-          <button @click="aplicarCupom">Inserir cupom</button>
+          <button class="cupom" @click="aplicarCupom">Inserir cupom</button>
         </div>
         <div class="direito">
           <h4>Total da Compra</h4>
           <ul class="detalhes">
             <li>Produtos: R$ {{ total.toFixed(2) }}</li>
-            <hr />
             <li>Frete: Grátis</li>
-            <hr />
             <li>
               Total:
               <strong>R$ {{ totalComDesconto.toFixed(2) }}</strong>
@@ -227,5 +225,34 @@ input{
   background-color: #27AE60;
   cursor: pointer;
 }
+.vazio p{
+  margin: 3vw 0 0 9vw;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.item{
+  display: flex;
+}
+.item img{
+  width: 200px;
+  height: 150px;
+  margin: 3vw 0vw 2vw 7vw ;
+}
+.info{
+ line-height: 2.5rem;
+ margin: 3vw 0 0 0;
+}
+.info h3{
+  font-size: 1.5rem;
+}
+.info p{
+  font-size: 1rem;
+}
+.info span p{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
 </style>
 

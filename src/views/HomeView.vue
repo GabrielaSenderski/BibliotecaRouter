@@ -26,7 +26,7 @@ function adicionarAoCarrinho(produto) {
           traduzidos para dezenas de idiomas, adaptados para TV e receberam diversos prêmios, como
           o Goodreads Choice Awards.
         </p>
-        <a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo">Acessar página do livro</a>
+        <button><a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo">Acessar página do livro</a></button>
       </div>
       <div class="direito">
           <img src="../../public/img/setemaridos.svg" alt="Exemplar do livro 'Os sete maridos de Evelyn Hugo'" />
@@ -51,8 +51,10 @@ function adicionarAoCarrinho(produto) {
           <h3>Mais vendidos</h3>
         </li>
       </ul>
+      <hr>
     </section>
     <section class="usandoPinia">
+      <h2 class="lancamento">Lançamentos</h2>
       <div class="product-list">
         <div v-for="product in products" :key="product.id" class="exibicaoLivro">
           <img :src="product.image" :alt="product.titulo" class="capaLivro" />
@@ -154,5 +156,9 @@ function adicionarAoCarrinho(produto) {
 }
 .inferior{
   display: flex;
+}
+.lancamento{
+  margin: 6vw 0 4vw 8vw;
+  font-size: 2.3rem;
 }
 </style>
