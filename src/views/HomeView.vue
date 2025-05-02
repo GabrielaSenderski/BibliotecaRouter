@@ -26,7 +26,7 @@ function adicionarAoCarrinho(produto) {
           traduzidos para dezenas de idiomas, adaptados para TV e receberam diversos prêmios, como
           o Goodreads Choice Awards.
         </p>
-        <a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo">Acessar página do livro</a>
+        <button><a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo">Acessar página do livro</a></button>
       </div>
       <div class="direito">
           <img src="../../public/img/setemaridos.svg" alt="Exemplar do livro 'Os sete maridos de Evelyn Hugo'" />
@@ -51,21 +51,23 @@ function adicionarAoCarrinho(produto) {
           <h3>Mais vendidos</h3>
         </li>
       </ul>
+      <hr>
     </section>
     <section class="usandoPinia">
+      <h2 class="lancamento">Lançamentos</h2>
       <div class="product-list">
         <div v-for="product in products" :key="product.id" class="exibicaoLivro">
           <img :src="product.image" :alt="product.titulo" class="capaLivro" />
           <h2 class="tituloLivro">{{ product.titulo }}</h2>
-          <p class="autorLivro">Autor: {{ product.autor }}</p>
-          <p class="precoLivro">Preço: R$ {{ product.preco.toFixed(2) }}</p>
-          <div class="like">
+          <p class="autorLivro">{{ product.autor }}</p>
+           <div class="like">
+          <p class="precoLivro">R$ {{ product.preco.toFixed(2) }}</p>
             <button @click="curtido = !curtido">
               <span v-if="!curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
               <span v-else class="fa-solid fa-heart" style="color: #33d17a"></span>
             </button>
           </div>
-          <button @click="adicionarAoCarrinho(product)">
+          <button class="compra" @click="adicionarAoCarrinho(product)">
             <span class="fa-solid fa-cart-shopping" style="color: #fff"></span> Comprar
           </button>
         </div>
@@ -95,12 +97,12 @@ function adicionarAoCarrinho(produto) {
 }
 .banner p{
   font-size: 1.2rem;
-  padding: 0 26vw 0 3vw;
+  padding: 0 25vw 0 3vw;
  margin: 0 0 1.5vw;
 }
 .banner button{
   font-size: 1.2rem;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border: 2px solid #27AE60;
   border-radius: 4px;
   display: inline-block;
@@ -145,14 +147,62 @@ function adicionarAoCarrinho(produto) {
   background-color: #937DC2;
   margin: 45px 0 ;
 }
-.lançamentos h2{
-  font-size: 2.3rem;
-  margin: 5vw 0 0 7vw;
-}
 .superior {
   display: flex;
 }
 .inferior{
   display: flex;
 }
+.lancamento{
+  margin: 6vw 0 4vw 8vw;
+  font-size: 2.3rem;
+}
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 8vw;
+}
+.product-list img{
+  margin: 0 3vw 1.2vw 0;
+}
+.tituloLivro{
+  font-size: 1.6rem;
+}
+.autorLivro{
+  margin: 1vw 0;
+  font-size: 1.2rem;
+  color: #4F4C57;
+}
+.like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 0 2vw 0;
+}
+.like button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1.6vw;
+}
+.precoLivro{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.compra{
+  font-size: 1.2rem;
+  padding: 0.8rem 5.3rem;
+  border: 2px solid #27AE60;
+  border-radius: 4px;
+  display: inline-block;
+  color:#FFFFFF;
+  font-weight: bold;
+  background-color: #27AE60 ;
+  cursor: pointer;
+  margin: 0 0 8vw 0;
+}
+
+
 </style>
