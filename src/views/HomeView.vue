@@ -3,6 +3,8 @@ import { useProductsStore } from '../stores/produtos'
 import { useCarrinhoStore } from '../stores/carrinho'
 import { useRouter } from 'vue-router'
 
+
+
 const { products } = useProductsStore()
 const carrinho = useCarrinhoStore()
 const router = useRouter()
@@ -56,14 +58,15 @@ function adicionarAoCarrinho(produto) {
     <section class="usandoPinia">
       <h2 class="lancamento">Lançamentos</h2>
       <div class="product-list">
+       
         <div v-for="product in products" :key="product.id" class="exibicaoLivro">
           <img :src="product.image" :alt="product.titulo" class="capaLivro" />
           <h2 class="tituloLivro">{{ product.titulo }}</h2>
           <p class="autorLivro">{{ product.autor }}</p>
            <div class="like">
           <p class="precoLivro">R$ {{ product.preco.toFixed(2) }}</p>
-            <button @click="curtido = !curtido">
-              <span v-if="!curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
+            <button @click="product.curtido = !product.curtido">
+              <span v-if="!product.curtido" class="fa-regular fa-heart" style="color: #33d17a"></span>
               <span v-else class="fa-solid fa-heart" style="color: #33d17a"></span>
             </button>
           </div>
@@ -160,7 +163,8 @@ function adicionarAoCarrinho(produto) {
 .product-list{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 8vw;
+  margin: 0 0 0 17rem;
+ 
 }
 .product-list img{
   margin: 0 3vw 1.2vw 0;
