@@ -225,9 +225,10 @@ input{
   cursor: pointer;
 }
 .vazio p{
-  margin: 3vw 0 0 9vw;
-  font-size: 1.2rem;
-  font-weight: bold;
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1rem;
+  font-style: italic;
 }
 .item{
   display: flex;
@@ -252,7 +253,7 @@ input{
   font-weight: bold;
 }
 .controle {
-  margin: 5vw 2vw 7vw 14vw;
+  margin: 6rem 2rem 8rem 19rem;
   padding: 1.2vw 1.5vw;
   border: 1px solid black;
   font-size: 1.2rem;

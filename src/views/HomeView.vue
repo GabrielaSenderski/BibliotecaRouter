@@ -58,7 +58,7 @@ function adicionarAoCarrinho(produto) {
     <section class="usandoPinia">
       <h2 class="lancamento">Lançamentos</h2>
       <div class="product-list">
-       
+
         <div v-for="product in products" :key="product.id" class="exibicaoLivro">
           <img :src="product.image" :alt="product.titulo" class="capaLivro" />
           <h2 class="tituloLivro">{{ product.titulo }}</h2>
@@ -130,7 +130,7 @@ function adicionarAoCarrinho(produto) {
 }
 .fileira ul li{
   display: flex;
-  margin: 5vw 6vw;
+  margin: 5rem 9rem;
 }
 .fileira ul li h3{
   font-size: 1.7rem;
@@ -164,7 +164,7 @@ function adicionarAoCarrinho(produto) {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 0 17rem;
- 
+
 }
 .product-list img{
   margin: 0 3vw 1.2vw 0;
@@ -181,7 +181,7 @@ function adicionarAoCarrinho(produto) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 80%;
   margin: 0 0 2vw 0;
 }
 .like button {
@@ -197,7 +197,7 @@ function adicionarAoCarrinho(produto) {
 }
 .compra{
   font-size: 1.2rem;
-  padding: 0.8rem 5.3rem;
+  padding: 0.8rem 5rem;
   border: 2px solid #27AE60;
   border-radius: 4px;
   display: inline-block;

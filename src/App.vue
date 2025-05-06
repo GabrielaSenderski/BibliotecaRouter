@@ -34,14 +34,18 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="todas">
         <div class="icone">
     <p>IFbooks</p>
+    <span class="fa-brands fa-square-facebook"></span>
+    <span class="fa-brands fa-square-instagram"></span>
+    <span class="fa-brands fa-square-twitter"></span>
         </div>
 <div class="contato">
   <p>Contato</p>
   <ul>
-    <li>+55 47 40045263</li>
-    <li>8h às 23h - Seg a Sex</li>
-    <li>Contato@ifbooks.com</li>
+    <li> <span class="fa-solid fa-phone"></span>  +55 47 40045263</li>
+    <li> <span class="fa-solid fa-clock"></span>  8h às 23h - Seg a Sex</li>
+    <li> <span class="fa-solid fa-envelope"></span>  contato@ifbooks.com</li>
   </ul>
+  <img src="../public/img/ways to pay.png" alt="pague">
 </div>
       </div>
      <hr style="border: 1px solid white;">
@@ -72,9 +76,19 @@ footer li{
 }
 footer .copy{
   text-align: center;
-  margin: 1.5vw;
   font-size: 1rem;
   color: rgba(255, 255, 255, 60%);
   padding: 1vw;
+}
+footer .icone span{
+  color: white;
+  font-size: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.contato img{
+  margin: 5rem 0 4rem;
+}
+.contato p{
+  font-weight: bold;
 }
 </style>
