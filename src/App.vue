@@ -45,7 +45,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <li> <span class="fa-solid fa-clock"></span>  8h às 23h - Seg a Sex</li>
     <li> <span class="fa-solid fa-envelope"></span>  contato@ifbooks.com</li>
   </ul>
-  <img src="../public/img/ways to pay.png" alt="pague">
+  <img src="../public/img/ways to pay.png" alt="formas de pagamento">
 </div>
       </div>
      <hr style="border: 1px solid white;">
