@@ -368,7 +368,6 @@ input{
   }
 }
 
-
 @media (max-width: 768px) {
   .carrinho h2 {
     font-size: 1.8rem;
