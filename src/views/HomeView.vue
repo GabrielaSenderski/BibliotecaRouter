@@ -2,17 +2,25 @@
 import { useProductsStore } from '../stores/produtos'
 import { useCarrinhoStore } from '../stores/carrinho'
 import { useRouter } from 'vue-router'
-
+import { useBuscaStore } from '../stores/busca'
+import { computed } from 'vue'
 
 
 const { products } = useProductsStore()
 const carrinho = useCarrinhoStore()
 const router = useRouter()
+const buscaStore = useBuscaStore()
 
 function adicionarAoCarrinho(produto) {
   carrinho.adicionarItem(produto)
   router.push('/carrinho')
 }
+
+const produtosFiltrados = computed(() => {
+  return products.filter((produto) =>
+    produto.titulo.toLowerCase().includes(buscaStore.termo.toLowerCase())
+  )
+})
 </script>
 
 <template>
@@ -59,7 +67,7 @@ function adicionarAoCarrinho(produto) {
       <h2 class="lancamento">Lançamentos</h2>
       <div class="product-list">
 
-        <div v-for="product in products" :key="product.id" class="exibicaoLivro">
+        <div v-for="product in produtosFiltrados" :key="product.id" class="exibicaoLivro">
           <img :src="product.image" :alt="product.titulo" class="capaLivro" />
           <h2 class="tituloLivro">{{ product.titulo }}</h2>
           <p class="autorLivro">{{ product.autor }}</p>
@@ -74,6 +82,7 @@ function adicionarAoCarrinho(produto) {
             <span class="fa-solid fa-cart-shopping" style="color: #fff"></span> Comprar
           </button>
         </div>
+        
       </div>
     </section>
   </main>
