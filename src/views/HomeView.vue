@@ -109,8 +109,8 @@ const produtosFiltrados = computed(() => {
 }
 .banner p{
   font-size: 1.2rem;
-  padding: 0 23rem 0 3rem;
- margin: 0 0 1.5rem;
+  padding: 0 11rem 0 3rem;
+  margin: 0 0 1.5rem;
 }
 .banner button{
   font-size: 1.2rem;
@@ -131,7 +131,7 @@ const produtosFiltrados = computed(() => {
   margin: 6rem 0 4rem 6rem;
 }
 .direito{
-  margin: 0 6rem 0 0;
+  margin: 0 8rem 0 0;
 }
 .fileira ul{
   display: flex;
@@ -142,13 +142,13 @@ const produtosFiltrados = computed(() => {
   margin: 5rem 8rem;
 }
 .fileira ul li h3{
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 .fileira ul li span{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #2a2d30;
-  margin: 0 1rem;
+  margin: 0 2rem 0 0;
 }
 .fileira div{
   color: red;
@@ -197,7 +197,7 @@ const produtosFiltrados = computed(() => {
 .precoLivro{
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 0 2rem;
+  margin: 0 2rem 0 0;
 }
 .compra{
   font-size: 1.2rem;
@@ -237,7 +237,7 @@ const produtosFiltrados = computed(() => {
   .banner p {
     font-size: 1.3rem;
     padding: 0 2rem;
-    margin: 0 0 2rem;
+    margin: 0 0 2rem 0;
     text-align: center;
   }
 

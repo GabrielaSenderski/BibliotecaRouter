@@ -17,7 +17,7 @@ export const useProductsStore = defineStore('products', () => {
     { id: 12, image: '/img/estilhacame.svg', titulo: 'Estilhaça-me', autor: 'Tahereh Mafi', preco: 19.90, curtido: false },
     { id: 13, image: '/img/imperfeitos.svg', titulo: 'Imperfeitos', autor: 'Christina Lauren', preco: 12.35, curtido: false },
     { id: 14, image: '/img/jantar.svg', titulo: 'Jantar Secreto', autor: 'Raphael Montes', preco: 46.36, curtido: false },
-    { id: 15, image: '/img/mentirosos.svg', titulo: 'A Seleção', autor: 'E. Lockhart', preco: 41.02, curtido: false },
+    { id: 15, image: '/img/mentirosos.svg', titulo: 'Mentirosos', autor: 'E. Lockhart', preco: 41.02, curtido: false },
     { id: 16, image: '/img/pipas.svg', titulo: 'O Caçador de Pipas', autor: 'Khaled Hosseini', preco: 49.00, curtido: false }
   ]);
 

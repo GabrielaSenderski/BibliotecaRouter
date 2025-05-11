@@ -368,16 +368,11 @@ input{
   }
 }
 
-
 @media (max-width: 768px) {
   .carrinho h2 {
     font-size: 1.8rem;
     margin: 4rem 1rem 2rem;
     text-align: center;
-  }
-
-  .carrinho ul {
-
   }
 
   .carrinho li {

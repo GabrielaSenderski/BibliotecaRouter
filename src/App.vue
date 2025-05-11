@@ -41,7 +41,7 @@ const buscaStore = useBuscaStore()
   </header>
 
   <RouterView />
-  <footer>
+<footer>
     <div class="todas">
       <div class="icone">
         <p>IFbooks</p>
@@ -52,44 +52,17 @@ const buscaStore = useBuscaStore()
       <div class="contato">
         <p>Contato</p>
         <ul>
-            <li><a href="#">Termos</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Envio</a></li>
-            <li><a href="#">Devoluções</a></li>
-            <li><RouterLink to="/carrinho" class="botao-carrinho">
-            <span class="fa-solid fa-cart-shopping" style="color: #33d17a; font-size: 1rem;"></span></RouterLink></li>
-            <div class="linha-vertical"></div>
-            <li><a href="#"><span class="fa-solid fa-heart" style="color: #33d17a; font-size: 1rem;"></span></a></li>
-            <div class="linha-vertical"></div>
-            <li><a href="#"><span class="fa-solid fa-user" style="color: #33d17a; font-size: 1rem;"></span></a></li>
+          <li><span class="fa-solid fa-phone"></span> +55 47 40045263</li>
+          <li><span class="fa-solid fa-clock"></span> 8h às 23h - Seg a Sex</li>
+          <li><span class="fa-solid fa-envelope"></span> contato@ifbooks.com</li>
         </ul>
-        </nav>
-        <hr>
-    </header>
-
-    <RouterView />
-    <footer>
-      <div class="todas">
-        <div class="icone">
-    <p>IFbooks</p>
-    <span class="fa-brands fa-square-facebook"></span>
-    <span class="fa-brands fa-square-instagram"></span>
-    <span class="fa-brands fa-square-twitter"></span>
-        </div>
-<div class="contato">
-  <p>Contato</p>
-  <ul>
-    <li> <span class="fa-solid fa-phone"></span>   +55 47 40045263</li>
-    <li> <span class="fa-solid fa-clock"></span>   8h às 23h - Seg a Sex</li>
-    <li> <span class="fa-solid fa-envelope"></span>   contato@ifbooks.com</li>
-  </ul>
-  <img src="../public/img/ways to pay.png" alt="formas de pagamento">
-</div>
+        <img src="../public/img/ways to pay.png" alt="formas de pagamento" />
       </div>
     </div>
     <hr style="border: 1px solid white" />
     <p class="copy">&copy; Alguns direitos reservados. IFbooks 2025.</p>
   </footer>
+   
 </template>
 
 <style scoped>
@@ -128,7 +101,7 @@ footer .icone span {
   margin: 0.5rem 0.8rem 0.5rem 0;
 }
 .contato img {
-  margin: 5rem 0 4rem;
+  margin: 2rem 0 4rem;
 }
 .contato p {
   font-weight: bold;
