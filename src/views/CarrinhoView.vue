@@ -375,9 +375,6 @@ input{
     text-align: center;
   }
 
-  .carrinho ul {
-
-  }
 
   .carrinho li {
     font-size: 1.2rem;
