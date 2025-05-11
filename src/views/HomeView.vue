@@ -36,7 +36,7 @@ const produtosFiltrados = computed(() => {
           traduzidos para dezenas de idiomas, adaptados para TV e receberam diversos prêmios, como
           o Goodreads Choice Awards.
         </p>
-        <button><a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo">Acessar página do livro</a></button>
+        <button><a href="https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo" target="_blank">Acessar página do livro</a></button>
       </div>
       <div class="direito">
           <img src="../../public/img/setemaridos.svg" alt="Exemplar do livro 'Os sete maridos de Evelyn Hugo'" />
