@@ -84,4 +84,56 @@ button{
 a{
   font-family: Inter;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw 0;
+  }
 
+  nav img {
+    margin: 2rem 1rem;
+    width: 140px;
+    height: auto;
+
+  }
+
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+    nav .ajuste1{
+      display: flex;
+      margin: 0 6.5rem;
+    }
+    nav .ajuste2{
+      display: flex;
+      margin: 0 17rem;
+    }
+
+  nav ul li {
+    margin: 2rem 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  nav div input {
+    width: 50vw;
+    height: 36px;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .search img {
+    margin: 1rem 0 0 0;
+    right: 10%;
+    top: 60%;
+  }
+
+  .linha-vertical {
+    display: none;
+  }
+
+  nav button {
+    margin: 1rem 0;
+  }
+}
