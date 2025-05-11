@@ -49,6 +49,7 @@ const buscaStore = useBuscaStore()
         <span class="fa-brands fa-square-instagram"></span>
         <span class="fa-brands fa-square-twitter"></span>
       </div>
+    </div>
       <div class="contato">
         <p>Contato</p>
         <ul>
@@ -63,33 +64,10 @@ const buscaStore = useBuscaStore()
             <div class="linha-vertical"></div>
             <li><a href="#"><span class="fa-solid fa-user" style="color: #33d17a; font-size: 1rem;"></span></a></li>
         </ul>
-        </nav>
+         </div>
         <hr>
-    </header>
-
+        </footer>
     <RouterView />
-    <footer>
-      <div class="todas">
-        <div class="icone">
-    <p>IFbooks</p>
-    <span class="fa-brands fa-square-facebook"></span>
-    <span class="fa-brands fa-square-instagram"></span>
-    <span class="fa-brands fa-square-twitter"></span>
-        </div>
-<div class="contato">
-  <p>Contato</p>
-  <ul>
-    <li> <span class="fa-solid fa-phone"></span>   +55 47 40045263</li>
-    <li> <span class="fa-solid fa-clock"></span>   8h às 23h - Seg a Sex</li>
-    <li> <span class="fa-solid fa-envelope"></span>   contato@ifbooks.com</li>
-  </ul>
-  <img src="../public/img/ways to pay.png" alt="formas de pagamento">
-</div>
-      </div>
-    </div>
-    <hr style="border: 1px solid white" />
-    <p class="copy">&copy; Alguns direitos reservados. IFbooks 2025.</p>
-  </footer>
 </template>
 
 <style scoped>
