@@ -113,7 +113,7 @@ function aplicarCupom() {
 <style scoped>
 .carrinho h2{
   font-size: 2.3rem;
-  margin: 14rem 0 2rem 9rem;
+  margin: 14vw 0 2vw 9vw;
   color: #27AE60;
 }
 .carrinho ul{
@@ -121,11 +121,11 @@ function aplicarCupom() {
 }
 .carrinho li{
   font-size: 1.5rem;
-  margin: 5rem 10rem 1rem;
+  margin: 5vw 10vw 1vw;
   font-weight: bolder;
 }
 span{
-  margin: 0 19rem 0 0;
+  margin: 0 19vw 0 0;
 }
 .linha-escura {
   border: none;
@@ -140,15 +140,15 @@ span{
   border: 2px solid gray;
   border-radius: 4px;
   color: black;
-  margin: 2rem 0 6rem 8rem;
+  margin: 2vw 0 6vw 8vw;
   background-color: white;
   cursor: pointer;
   text-align: center;
 }
 input{
-  width: 18rem;
-  height: 3.8rem;
-  margin: 0 1rem 0 8rem;
+  width: 18vw;
+  height: 3.8vw;
+  margin: 0 1vw 0 8vw;
   font-size: 1.2rem;
   border-color: black;
   border-radius: 4px;
@@ -173,13 +173,13 @@ input{
   border: 2px solid gray;
   border-radius: 4px;
   background-color: white;
-  margin: 0 0 10rem 19rem;
+  margin: 0 0 10vw 19vw;
   gap: 1.2rem;
 }
 
 .direito h4 {
   font-size: 1.4rem;
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 2vw;
   gap: 1rem;
 }
 
@@ -194,9 +194,9 @@ input{
   position: relative;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
-  margin: 0 0 0 2rem;
-  font-size: 1rem;
-  line-height: 3rem;
+  margin: 0 0 0 2vw;
+  font-size: 1.2;
+  line-height: 3vw;
 }
 
 
@@ -236,11 +236,11 @@ input{
 .item img{
   width: 200px;
   height: 150px;
-  margin: 3rem 0rem 2rem 6rem ;
+  margin: 3vw 0vw 2vw 7vw ;
 }
 .info{
  line-height: 2.5rem;
- margin: 3rem 0 0 0;
+ margin: 3vw 0 0 0;
 }
 .info h3{
   font-size: 1.5rem;
@@ -253,14 +253,14 @@ input{
   font-weight: bold;
 }
 .controle {
-  margin: 6rem 2rem 8rem 16rem;
-  padding: 1.2rem 1.5rem;
+  margin: 6rem 2rem 8rem 19rem;
+  padding: 1.2vw 1.5vw;
   border: 1px solid black;
   font-size: 1.2rem;
   font-weight: bold;
 }
 .controle span{
-  margin: 1.5rem;
+  margin: 1.5vw;
 }
 .controle button {
   cursor: pointer;
@@ -269,235 +269,9 @@ input{
   font-size: 1.6rem;
 }
 .valor{
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-weight: bold;
-  margin: 6rem 3rem 0 17rem;
-}
-
-@media (max-width: 1281px) {
-  .carrinho h2 {
-    font-size: 2rem;
-    margin: 10rem 0 2rem 5rem;
-  }
-
-  .carrinho ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  .carrinho li {
-    font-size: 1.3rem;
-    margin: 3rem 6rem 1rem;
-  }
-
-  span {
-    margin: 0 20rem 0 2rem;
-  }
-
-  .loja {
-    font-size: 1rem;
-    margin: 2rem 0 4rem 5rem;
-  }
-
-  input {
-    width: 16rem;
-    margin: 0 1rem 0 5rem;
-  }
-
-  .mae {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .direito {
-    padding: 2rem;
-    margin: 0 2rem 6rem;
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .detalhes {
-    width: 100%;
-  }
-
-  .pagar-wrapper {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-
-  .item img {
-    width: 150px;
-    height: auto;
-    margin: 2rem 0 2rem 4rem;
-  }
-
-  .info {
-    margin: 0;
-    line-height: 2rem;
-  }
-
-  .info h3 {
-    font-size: 1.3rem;
-  }
-
-  .info p {
-    font-size: 1rem;
-  }
-
-  .info span p {
-    font-size: 1.1rem;
-  }
-
-  .controle {
-    margin: 4rem 4rem 6rem 10rem;
-    padding: 1rem 1.2rem;
-    font-size: 1rem;
-  }
-
-  .valor {
-    font-size: 1.4rem;
-    margin: 2rem 4rem 4rem 8rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .carrinho h2 {
-    font-size: 1.8rem;
-    margin: 4rem 1rem 2rem;
-    text-align: center;
-  }
-
-  .carrinho ul {
-
-  }
-
-  .carrinho li {
-    font-size: 1.2rem;
-    margin: 2rem 2rem;
-
-  }
-
-  span {
-    margin: 0 11rem 0 1rem;
-  }
-
-  .loja {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    margin: 2rem auto;
-    display: block;
-    width: 50%;
-  }
-
-  input {
-    width: 100%;
-    margin: 1rem auto;
-    display: block;
-    height: 3rem;
-    font-size: 1rem;
-  }
-
-  .cupom {
-    display: block;
-    width: 80%;
-    margin: 1rem auto;
-    font-size: 1.2rem;
-    padding: 0.8rem 0;
-    text-align: center;
-  }
-
-  .mae {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .direito {
-    width: 90%;
-    margin: 2rem auto;
-    padding: 1.5rem;
-  }
-
-  .direito h4 {
-    font-size: 1.4rem;
-    margin: 0 0 1rem 0;
-    text-align: center;
-  }
-
-  .detalhes {
-    width: 100%;
-  }
-
-  .detalhes li {
-    font-size: 1.2rem;
-    margin-left: 0;
-    text-align: left;
-    line-height: 2.5rem;
-  }
-
-  .pagar-wrapper {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .pagar {
-    font-size: 1.3rem;
-    width: 80%;
-    padding: 1rem;
-  }
-
-  .item {
-    align-items: center;
-  }
-
-  .item img {
-    width: 40%;
-    height: auto;
-    margin: 1.5rem 0 1.5rem 1.5rem ;
-  }
-
-  .info {
-    margin: -3rem 1rem 1rem -8rem;
-    line-height: 2rem;
-  }
-
-  .info h3 {
-    font-size: 1.4rem;
-  }
-
-  .info p {
-    font-size: 1.2rem;
-  }
-
-  .info span p {
-    font-size: 1.4rem;
-  }
-
-  .controle {
-    margin: 2rem -2rem;
-    padding: 0.1rem 1rem;
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .controle span {
-    margin: 1rem;
-    display: inline-block;
-  }
-
-  .valor {
-    font-size: 1.3rem;
-    margin: 2rem 0 2rem 6.5rem;
-    text-align: center;
-  }
+  margin: 6vw 2vw 0 17.5vw;
 }
 
 

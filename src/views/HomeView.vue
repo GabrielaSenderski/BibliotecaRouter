@@ -101,16 +101,16 @@ const produtosFiltrados = computed(() => {
   display: inline-block;
   color: #27AE60;
   font-weight: bold;
-  margin: 3rem 0 0 3rem;
+  margin: 3vw 0 0 3vw;
 }
 .banner h1{
   font-size: 3rem;
-  margin: 2.5rem 0 2rem 3rem;
+  margin: 2.5vw 0 2vw 3vw;
 }
 .banner p{
   font-size: 1.2rem;
-  padding: 0 23rem 0 3rem;
- margin: 0 0 1.5rem;
+  padding: 0 25vw 0 3vw;
+ margin: 0 0 1.5vw;
 }
 .banner button{
   font-size: 1.2rem;
@@ -120,7 +120,7 @@ const produtosFiltrados = computed(() => {
   display: inline-block;
   color:#FFFFFF;
   font-weight: bold;
-  margin: 0 0 0 3rem;
+  margin: 0 0 0 3vw;
   background-color: #27AE60 ;
 }
 .ladoEsquerdo a {
@@ -128,10 +128,10 @@ const produtosFiltrados = computed(() => {
   color: inherit;
 }
 .ladoEsquerdo{
-  margin: 6rem 0 4rem 6rem;
+  margin: 6vw 0 4vw 6vw;
 }
 .direito{
-  margin: 0 6rem 0 0;
+  margin: 0 6vw 0 0;
 }
 .fileira ul{
   display: flex;
@@ -139,7 +139,7 @@ const produtosFiltrados = computed(() => {
 }
 .fileira ul li{
   display: flex;
-  margin: 5rem 8rem;
+  margin: 5rem 9rem;
 }
 .fileira ul li h3{
   font-size: 1.7rem;
@@ -148,7 +148,7 @@ const produtosFiltrados = computed(() => {
 .fileira ul li span{
   font-size: 2rem;
   color: #2a2d30;
-  margin: 0 1rem;
+  margin: 0 1vw;
 }
 .fileira div{
   color: red;
@@ -159,24 +159,30 @@ const produtosFiltrados = computed(() => {
   background-color: #937DC2;
   margin: 45px 0 ;
 }
+.superior {
+  display: flex;
+}
+.inferior{
+  display: flex;
+}
 .lancamento{
-  margin: 6rem 0 4rem 8rem;
+  margin: 6vw 0 4vw 8vw;
   font-size: 2.3rem;
 }
 .product-list{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 7rem;
+  margin: 0 0 0 17rem;
 
 }
 .product-list img{
-  margin: 0 3rem 1.2rem 0;
+  margin: 0 3vw 1.2vw 0;
 }
 .tituloLivro{
   font-size: 1.6rem;
 }
 .autorLivro{
-  margin: 1rem 0;
+  margin: 1vw 0;
   font-size: 1.2rem;
   color: #4F4C57;
 }
@@ -185,19 +191,18 @@ const produtosFiltrados = computed(() => {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2vw 0;
 }
 .like button {
   background: none;
   border: none;
   cursor: pointer;
   margin-left: auto;
-  font-size: 1.6rem;
+  font-size: 1.6vw;
 }
 .precoLivro{
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 0 2rem;
 }
 .compra{
   font-size: 1.2rem;
@@ -209,228 +214,7 @@ const produtosFiltrados = computed(() => {
   font-weight: bold;
   background-color: #27AE60 ;
   cursor: pointer;
-  margin: 0 0 8rem 0;
-}
-
-@media (max-width: 1281px) {
-
-  .gran {
-    flex-direction: row;
-
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .abril {
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
-    margin: 1.5rem auto;
-    text-align: center;
-  }
-
-  .banner h1 {
-    font-size: 2.4rem;
-    margin: 1rem 1rem 0.5rem;
-    text-align: center;
-  }
-
-  .banner p {
-    font-size: 1.3rem;
-    padding: 0 2rem;
-    margin: 0 0 2rem;
-    text-align: center;
-  }
-
-  .banner button {
-    font-size: 1.2rem;
-    padding: 0.8rem 2rem;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .ladoEsquerdo,
-  .direito {
-    margin: 1rem 2rem;
-  }
-
-  .fileira ul {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .fileira ul li {
-    margin: 2rem 1rem;
-    align-items: center;
-  }
-
-  .linha-vertical {
-    display: none;
-  }
-
-  .lancamento {
-    font-size: 2.2rem;
-    margin: 3rem 1rem;
-    text-align: center;
-  }
-
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 2rem;
-  }
-
-  .product-list img {
-    width: 220px;
-    height: auto;
-    margin: 1rem;
-  }
-
-  .exibicaoLivro {
-    margin: 0 1rem;
-    max-width: 250px;
-  }
-
-  .tituloLivro {
-    font-size: 1.3rem;
-    margin: 0.5rem 1.2rem;
-  }
-
-  .autorLivro {
-    font-size: 1rem;
-    margin: 0.5rem 1.2rem;
-  }
-
-  .like {
-    width: 100%;
-  }
-
-  .like button {
-    margin: 0.5rem 1rem;
-  }
-
-  .precoLivro {
-    font-size: 1.1rem;
-   margin: 0.5rem 1.2rem;;
-  }
-
-  .compra {
-    width: 90%;
-    font-size: 1rem;
-    padding: 1rem;
-    margin: 0 1rem 2rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .gran {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .abril {
-    font-size: 1.2rem;
-    padding: 0.6rem;
-    margin: 2rem auto;
-    display: block;
-    text-align: center;
-  }
-
-  .banner h1 {
-    font-size: 2rem;
-    margin: 1.5rem 1rem 1rem;
-    text-align: center;
-  }
-
-  .banner p {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-    margin: 0 0 2rem;
-    text-align: center;
-  }
-
-  .banner button {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .ladoEsquerdo,
-  .direito {
-    margin: 1rem 1rem;
-  }
-
-  .fileira ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-
-  .fileira ul li {
-    margin: 2rem auto;
-    align-items: center;
-  }
-
-  .linha-vertical {
-    display: none;
-  }
-  .lancamento {
-    font-size: 2rem;
-    margin: 3rem 1rem;
-    text-align: center;
-  }
-
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 3.5rem;
-  }
-
-  .product-list img {
-    width: 100%;
-    height: auto;
-    margin: 1rem 0;
-  }
-  .exibicaoLivro{
-    margin: 0 1.5rem;
-  }
-
-  .tituloLivro {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .autorLivro {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .like {
-    width: 100%;
-  }
-
-  .like button {
-    margin: 0.5rem 0;
-  }
-
-  .precoLivro {
-    font-size: 1.2rem;
-  }
-
-  .compra {
-    width: 85%;
-    font-size: 1rem;
-    padding: 1rem;
-    margin: 2rem auto;
-    display: block;
-    text-align: center;
-  }
+  margin: 0 0 8vw 0;
 }
 
 
